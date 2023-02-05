@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3AD0E863555EB72AAC4D38 /* Pods_githubProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09072151018C299B8F454933 /* Pods_githubProfile.framework */; };
+		676B379B298F25CC008906E2 /* GPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B379A298F25CC008906E2 /* GPTextField.swift */; };
+		676B379D298F292E008906E2 /* GPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B379C298F292E008906E2 /* GPButton.swift */; };
 		67D47CE3298EEDA900EB7BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D47CE2298EEDA900EB7BF4 /* AppDelegate.swift */; };
 		67D47CE5298EEDA900EB7BF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D47CE4298EEDA900EB7BF4 /* SceneDelegate.swift */; };
 		67D47CE7298EEDA900EB7BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D47CE6298EEDA900EB7BF4 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09072151018C299B8F454933 /* Pods_githubProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		676B379A298F25CC008906E2 /* GPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTextField.swift; sourceTree = "<group>"; };
+		676B379C298F292E008906E2 /* GPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPButton.swift; sourceTree = "<group>"; };
 		67D47CDF298EEDA900EB7BF4 /* githubProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D47CE2298EEDA900EB7BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D47CE4298EEDA900EB7BF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		67D47CEB298EEDAA00EB7BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D47CEE298EEDAA00EB7BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D47CF0298EEDAA00EB7BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC02A86A0B696BBBE052B9C /* Pods-githubProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubProfile.debug.xcconfig"; path = "Target Support Files/Pods-githubProfile/Pods-githubProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		EB084B5EDF86109F75112C4D /* Pods-githubProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubProfile.release.xcconfig"; path = "Target Support Files/Pods-githubProfile/Pods-githubProfile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3AD0E863555EB72AAC4D38 /* Pods_githubProfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2948200978E5A628B7DD9F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFC02A86A0B696BBBE052B9C /* Pods-githubProfile.debug.xcconfig */,
+				EB084B5EDF86109F75112C4D /* Pods-githubProfile.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		676B379E298F2C74008906E2 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				676B379C298F292E008906E2 /* GPButton.swift */,
+				676B379A298F25CC008906E2 /* GPTextField.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		67D47CD6298EEDA900EB7BF4 = {
 			isa = PBXGroup;
 			children = (
 				67D47CE1298EEDA900EB7BF4 /* githubProfile */,
 				67D47CE0298EEDA900EB7BF4 /* Products */,
+				2948200978E5A628B7DD9F46 /* Pods */,
+				FFD8576D930C1152A12CA68F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +89,20 @@
 				67D47CE4298EEDA900EB7BF4 /* SceneDelegate.swift */,
 				67D47CE6298EEDA900EB7BF4 /* ViewController.swift */,
 				67D47CE8298EEDA900EB7BF4 /* Main.storyboard */,
+				676B379E298F2C74008906E2 /* Custom Views */,
 				67D47CEB298EEDAA00EB7BF4 /* Assets.xcassets */,
 				67D47CED298EEDAA00EB7BF4 /* LaunchScreen.storyboard */,
 				67D47CF0298EEDAA00EB7BF4 /* Info.plist */,
 			);
 			path = githubProfile;
+			sourceTree = "<group>";
+		};
+		FFD8576D930C1152A12CA68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09072151018C299B8F454933 /* Pods_githubProfile.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67D47CF3298EEDAA00EB7BF4 /* Build configuration list for PBXNativeTarget "githubProfile" */;
 			buildPhases = (
+				20B6A04FA7FF3CC430945373 /* [CP] Check Pods Manifest.lock */,
 				67D47CDB298EEDA900EB7BF4 /* Sources */,
 				67D47CDC298EEDA900EB7BF4 /* Frameworks */,
 				67D47CDD298EEDA900EB7BF4 /* Resources */,
+				D65C9F88AA1A61FB44F3FE22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +143,7 @@
 				};
 			};
 			buildConfigurationList = 67D47CDA298EEDA900EB7BF4 /* Build configuration list for PBXProject "githubProfile" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,12 +173,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20B6A04FA7FF3CC430945373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-githubProfile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D65C9F88AA1A61FB44F3FE22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubProfile/Pods-githubProfile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubProfile/Pods-githubProfile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubProfile/Pods-githubProfile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67D47CDB298EEDA900EB7BF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676B379B298F25CC008906E2 /* GPTextField.swift in Sources */,
 				67D47CE7298EEDA900EB7BF4 /* ViewController.swift in Sources */,
+				676B379D298F292E008906E2 /* GPButton.swift in Sources */,
 				67D47CE3298EEDA900EB7BF4 /* AppDelegate.swift in Sources */,
 				67D47CE5298EEDA900EB7BF4 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		67D47CF4298EEDAA00EB7BF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC02A86A0B696BBBE052B9C /* Pods-githubProfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +378,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +387,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burak.githubProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		67D47CF5298EEDAA00EB7BF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB084B5EDF86109F75112C4D /* Pods-githubProfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +410,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +419,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burak.githubProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
