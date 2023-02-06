@@ -46,7 +46,7 @@
                                                     <constraint firstAttribute="height" constant="50" id="6Y8-XG-EMD"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="2"/>
@@ -103,11 +103,28 @@
                     <navigationItem key="navigationItem" id="SYh-Te-gp8"/>
                     <connections>
                         <outlet property="textField" destination="vBU-YK-Kb8" id="q3V-57-IeN"/>
+                        <segue destination="k0F-je-XEY" kind="show" identifier="toDetail" id="3Qa-9u-TjZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1072.8" y="238.66995073891627"/>
+        </scene>
+        <!--Username-->
+        <scene sceneID="dnb-JW-jhB">
+            <objects>
+                <viewController id="k0F-je-XEY" customClass="DetailVC" customModule="githubProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRs-H4-Kdm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zzw-EP-erY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Username" id="bpR-J8-Q24"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOM-3f-lX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="239"/>
         </scene>
         <!--Item-->
         <scene sceneID="Rvn-xh-nrj">

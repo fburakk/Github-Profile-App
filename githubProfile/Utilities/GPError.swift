@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum GPError: String,Error {
+    case invalidRequest = "Something went wrong. Please try again."
+}

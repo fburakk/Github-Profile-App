@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct K {
+    
+    struct segueID {
+        static var toDetail = "toDetail"
+    }
+    
+}

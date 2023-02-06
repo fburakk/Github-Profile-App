@@ -37,7 +37,18 @@ class SearchVC: UIViewController {
         }
         
         if let _ = textField.text {
-            performSegue(withIdentifier: K.segueID.toDetail, sender: nil)
+            NetworkManager.shared.getUser(endpoint: EndpointCases.getUser(username: textField.text!), type: User.self) { [weak self] response in 
+                switch response {
+                    
+                case .success(let user):
+                    print(user)
+                    self?.performSegue(withIdentifier: K.segueID.toDetail, sender: nil)
+                    
+                case .failure(let error):
+                    self?.makeAlert(titleText: "Error", messsageText: error.rawValue, actionButtonText: "Ok", action: {_ in self?.dismiss(animated: true)})
+                }
+            }
+            
         }
         
     }
