@@ -10,6 +10,7 @@ import UIKit
 class SearchVC: UIViewController {
 
     @IBOutlet weak var textField: GPTextField!
+    private var user: User?
     
     var isUsernameEntered: Bool {
         return !textField.text!.isEmpty
@@ -19,6 +20,10 @@ class SearchVC: UIViewController {
         super.viewDidLoad()
         configure()
         createGestureRecognizer()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        textField.text = ""
     }
     
     func configure() {
@@ -36,27 +41,9 @@ class SearchVC: UIViewController {
             return
         }
         
-        if let _ = textField.text {
-            NetworkManager.shared.getUser(endpoint: EndpointCases.getUser(username: textField.text!), type: User.self) { [weak self] response in 
-                switch response {
-                    
-                case .success(let user):
-                    print(user)
-                    self?.performSegue(withIdentifier: K.segueID.toDetail, sender: nil)
-                    
-                case .failure(let error):
-                    self?.makeAlert(titleText: "Error", messsageText: error.rawValue, actionButtonText: "Ok", action: {_ in self?.dismiss(animated: true)})
-                }
-            }
-            
-        }
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == K.segueID.toDetail {
-            let desVC = segue.destination as! DetailVC
-            desVC.username = textField.text!
+        if let username = textField.text as? String {
+            K.username = username
+            performSegue(withIdentifier: K.segueID.toDetail, sender: nil)
         }
     }
 }

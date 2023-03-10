@@ -10,8 +10,10 @@
 		0E3AD0E863555EB72AAC4D38 /* Pods_githubProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09072151018C299B8F454933 /* Pods_githubProfile.framework */; };
 		671D3056298FD9BC001421ED /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3055298FD9BC001421ED /* AlertVC.swift */; };
 		671D3058298FDB47001421ED /* MakeAlert Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D3057298FDB47001421ED /* MakeAlert Extension.swift */; };
+		673F8CE929BBACBF00D474C7 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673F8CE829BBACBF00D474C7 /* Follow.swift */; };
 		676B379B298F25CC008906E2 /* GPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B379A298F25CC008906E2 /* GPTextField.swift */; };
 		676B379D298F292E008906E2 /* GPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B379C298F292E008906E2 /* GPButton.swift */; };
+		67CBF6A429BBC5C600599D8B /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CBF6A329BBC5C600599D8B /* DetailCell.swift */; };
 		67CDAA72299070B500A70970 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDAA71299070B400A70970 /* Constants.swift */; };
 		67CDAA742990715900A70970 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDAA732990715900A70970 /* DetailVC.swift */; };
 		67CDAA7A299073AC00A70970 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDAA79299073AC00A70970 /* NetworkManager.swift */; };
@@ -30,8 +32,10 @@
 		09072151018C299B8F454933 /* Pods_githubProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_githubProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		671D3055298FD9BC001421ED /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		671D3057298FDB47001421ED /* MakeAlert Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MakeAlert Extension.swift"; sourceTree = "<group>"; };
+		673F8CE829BBACBF00D474C7 /* Follow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follow.swift; sourceTree = "<group>"; };
 		676B379A298F25CC008906E2 /* GPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTextField.swift; sourceTree = "<group>"; };
 		676B379C298F292E008906E2 /* GPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPButton.swift; sourceTree = "<group>"; };
+		67CBF6A329BBC5C600599D8B /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		67CDAA71299070B400A70970 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		67CDAA732990715900A70970 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		67CDAA79299073AC00A70970 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
+		67CBF6A229BBC5AC00599D8B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				67CBF6A329BBC5C600599D8B /* DetailCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		67CDAA75299072F900A70970 /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +107,7 @@
 				67D47CE6298EEDA900EB7BF4 /* SearchVC.swift */,
 				67CDAA732990715900A70970 /* DetailVC.swift */,
 				671D3055298FD9BC001421ED /* AlertVC.swift */,
+				67CBF6A229BBC5AC00599D8B /* Cells */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				67CDAA81299081BA00A70970 /* User.swift */,
+				673F8CE829BBACBF00D474C7 /* Follow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,9 +311,11 @@
 				67D47CE7298EEDA900EB7BF4 /* SearchVC.swift in Sources */,
 				67CDAA7A299073AC00A70970 /* NetworkManager.swift in Sources */,
 				671D3058298FDB47001421ED /* MakeAlert Extension.swift in Sources */,
+				67CBF6A429BBC5C600599D8B /* DetailCell.swift in Sources */,
 				67CDAA7C2990753000A70970 /* URLManager.swift in Sources */,
 				676B379D298F292E008906E2 /* GPButton.swift in Sources */,
 				671D3056298FD9BC001421ED /* AlertVC.swift in Sources */,
+				673F8CE929BBACBF00D474C7 /* Follow.swift in Sources */,
 				67CDAA742990715900A70970 /* DetailVC.swift in Sources */,
 				67D47CE3298EEDA900EB7BF4 /* AppDelegate.swift in Sources */,
 				67D47CE5298EEDA900EB7BF4 /* SceneDelegate.swift in Sources */,

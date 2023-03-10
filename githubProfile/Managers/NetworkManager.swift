@@ -13,7 +13,7 @@ class NetworkManager {
     
     private init() {}
     
-    func getUser<T:Codable>(endpoint:Endpoint,
+    func makeRequest<T:Codable>(endpoint:Endpoint,
                             type:T.Type,
                             completed: @escaping (Result<T,GPError>) -> Void) {
         
@@ -27,7 +27,7 @@ class NetworkManager {
             .validate()
             .responseDecodable(of: T.self,decoder: decoder) { response in
                 
-                guard let user = response.value else{
+                guard let user = response.value else {
                     completed(.failure(.invalidRequest))
                     return
                 }

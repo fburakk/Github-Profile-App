@@ -98,6 +98,7 @@ class AlertVC: UIViewController {
     
     func configureAlertActionButton() {
         view.addSubview(alertActionButton)
+        alertActionButton.cornerRadius = 10
         alertActionButton.translatesAutoresizingMaskIntoConstraints = false
         alertActionButton.setTitle(actionButtonText, for: .normal)
         alertActionButton.backgroundColor = .systemPink

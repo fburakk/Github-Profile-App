@@ -8,9 +8,9 @@
 import Foundation
 
 struct K {
+    static var username = ""
     
     struct segueID {
         static var toDetail = "toDetail"
     }
-    
 }
